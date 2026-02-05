@@ -1,6 +1,6 @@
 ---
 - name: demo playbook to ping hosts and show the gathered fatcs
-  hosts: localhost
+  hosts: all
   become: yes
   tasks:
     - name: Run demo task of pinging servers
