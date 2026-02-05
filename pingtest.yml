@@ -4,5 +4,3 @@
   tasks:
     - name: Ping localhost
       ping:
-    - name: debug task
-        msg: "{{ ansible_facts }}"
