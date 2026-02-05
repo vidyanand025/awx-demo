@@ -1,0 +1,9 @@
+---
+- name: demo playbook to ping hosts and show the gathered fatcs
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Run demo task of pinging servers
+      ping:
+    - name: debug task
+        msg: "{{ ansible_facts }}"
